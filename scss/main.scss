@@ -1,0 +1,21 @@
+@import '../scss/foundations/variables';
+@import '../scss/foundations/reset';
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #F4F3F2;
+    margin: 0;
+    padding: 0;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+p::selection,
+a::selection {
+    
+}
