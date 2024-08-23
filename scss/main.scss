@@ -6,7 +6,7 @@
 }
 
 html{
-    background-color: #F4F3F2;
+    background-color: $secondary-color;
     margin: 0;
     padding: 0;
 }
@@ -19,3 +19,5 @@ p::selection,
 a::selection {
     
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
