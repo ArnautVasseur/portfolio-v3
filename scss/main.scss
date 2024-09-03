@@ -6,18 +6,28 @@
 }
 
 html{
-    background-color: $secondary-color;
+    background-color: $secondary-100;
     margin: 0;
     padding: 0;
 }
 
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-p::selection,
-a::selection {
-    
+@font-face {
+    font-family: "KyoMadoka";
+    src: url(/public/fonts/KyoMadoka.ttf);
 }
+
+@font-face {
+    font-family: "CinioMedium";
+    src: url(/public/fonts/CinioText-Medium.ttf);
+}
+
+// h1::selection,
+// h2::selection,
+// h3::selection,
+// h4::selection,
+// p::selection,
+// a::selection {
+    
+// }
 
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');

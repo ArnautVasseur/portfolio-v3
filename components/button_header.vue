@@ -1,9 +1,9 @@
 <template>
   <div
     class="button"
-    @mouseenter="hovering = true"
-    @mouseleave="hovering = false"
-  >
+      @mouseenter="hovering = true"
+      @mouseleave="hovering = false"
+    >
 
     <arrow-icon class="arrow_icon"/>
     <project-icon class="svg_icon" :currentColor="hovering ? hoverColor : defaultColor"/>
@@ -24,34 +24,35 @@ const hovering = ref(false);
   height: 145px;
   border-radius: 60px;
   font-family: $sen;
-  background: $primary-color;
+  background: $primary-200;
   font-size: 2.5rem;
-  color: $secondary-color;
+  color: $secondary-100;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
   transition: 300ms;
   position: relative;
+  
+  &::before {
+    content: '';
+    width: 670px;
+    height: 130px;
+    border-radius: 55px;
+    background: none;
+    border: 3px solid $secondary-100;
+    position: absolute;
+  }
 }
 
-.button::before {
-  content: '';
-  width: 670px;
-  height: 130px;
-  border-radius: 55px;
-  background: none;
-  border: 3px solid $secondary-color;
-  position: absolute;
-}
 
 .button:hover {
-  background: $secondary-color;
-  color: $primary-color;
+  background: $secondary-100;
+  color: $primary-200;
 }
 
 .button:hover::before {
-  border: 3px solid $primary-color;
+  border: 3px solid $primary-200;
 }
 
 .arrow_icon {
